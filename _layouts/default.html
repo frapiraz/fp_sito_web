@@ -24,6 +24,7 @@
      canonical, Open Graph, Twitter Card — l'equivalente di Yoast,
      leggendo title/description dal front matter di ogni pagina. -->
 {% seo %}
+{% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
 
 {% if page.structured_data %}
 <script type="application/ld+json">
